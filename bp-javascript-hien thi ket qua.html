@@ -10,33 +10,34 @@
 
   <h1>Hiển thị kết quả sử dụng hàm alert</h1>
   <button type="button" onclick="showMessage();">Click Me!</button>
+
+
+  <h1>Hiển thị kết quả sử dụng thẻ HTML</h1>
+  <div id="messageDiv"></div>
+  <button type="button" onclick="showMessage2();">Click Me!</button>
+
+
+  <h1>Hiển thị kết quả sử dụng hàm document.write</h1>
+  <button type="button" onclick="showMessage3();">Click Me!</button>
+
+
+  <h1>Hiển thị kết quả sử dụng hàm console.log</h1>
+  <button type="button" onclick="showMessage4();">Click Me!</button>
+
   <script>
     function showMessage() {
       alert('Xin chào!');
     }
-  </script>
 
-  <h1>Hiển thị kết quả sử dụng thẻ HTML</h1>
-  <div id="messageDiv"></div>
-  <button type="button" onclick="showMessage();">Click Me!</button>
-  <script>
-    function showMessage() {
+    function showMessage2() {
       document.getElementById('messageDiv').innerHTML = 'Xin chào!';
     }
-  </script>
 
-  <h1>Hiển thị kết quả sử dụng hàm document.write</h1>
-  <button type="button" onclick="showMessage();">Click Me!</button>
-  <script>
-    function showMessage() {
+    function showMessage3() {
       document.write('Xin chào!');
     }
-  </script>
 
-  <h1>Hiển thị kết quả sử dụng hàm console.log</h1>
-  <button type="button" onclick="showMessage();">Click Me!</button>
-  <script>
-    function showMessage() {
+    function showMessage4() {
       console.log('Xin chào!');
     }
   </script>
